@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<meta name="referrer" content="same-origin">
+<link rel="stylesheet" type="text/css" href="{{html .Lib}}css/base.css">
+{{if .Options.DirectoryView -}}
+<link rel="stylesheet" type="text/css" href="{{html .Lib}}css/cls_files.css">
+{{end -}}
+{{if eq .Options.ThemeStyle "radio" -}}
+{{template "theme_radio.tmpl" . -}}
+{{else -}}
+{{template "theme_os.tmpl" . -}}
+{{end -}}
+{{template "enable_extlink.tmpl" . -}}
+{{if .Markdown.Extension.Math -}}
+{{template "enable_math.tmpl" . -}}
+{{end -}}
+{{if .Markdown.Extension.Mermaid -}}
+{{template "enable_mermaid.tmpl" . -}}
+{{end -}}
+{{if .Markdown.Extension.Highlight -}}
+{{template "enable_highlight.tmpl" . -}}
+{{end -}}
+{{if .Markdown.Extension.GeoMap -}}
+{{template "enable_geomap.tmpl" . -}}
+{{end -}}
+{{template "enable_aatext.tmpl" . -}}
+{{template "enable_cat_ui.tmpl" . -}}
+{{/* template "preload_fonts.tmpl" . */ -}}
+{{/* template "enable_twitter.tmpl" . */ -}}

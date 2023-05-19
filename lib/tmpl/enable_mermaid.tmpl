@@ -1,0 +1,6 @@
+{{if once "enable_mermaid.tmpl" -}}
+<link rel="preload" crossorigin as="style" type="text/css" href="{{html .Lib}}css/cls_mermaid.css">
+<link rel="stylesheet" type="text/css" href="{{html .Lib}}css/cls_mermaid.css">
+<script defer src="{{html .Lib}}lib/mermaid@9/mermaid.min.js"></script>
+<script defer src="{{html .Lib}}js/do_mermaid.js"></script>
+{{end -}}

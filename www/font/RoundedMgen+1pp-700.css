@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-00-02AF-700.woff2) format('woff2');
+  unicode-range: U+00-02af, U+02b0-036f, U+200c-200d;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-0370-2E7F-700.woff2) format('woff2');
+  unicode-range: U+0370-2e7f, U+200c-200d, U+02b0-036f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-2E80-2FFF-700.woff2) format('woff2');
+  unicode-range: U+2e80-2fff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3000-303F-700.woff2) format('woff2');
+  unicode-range: U+3000-303f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3040-309F-700.woff2) format('woff2');
+  unicode-range: U+3040-309f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-30A0-30FF-700.woff2) format('woff2');
+  unicode-range: U+30a0-30ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3100-312F-700.woff2) format('woff2');
+  unicode-range: U+3100-312f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3130-318F-700.woff2) format('woff2');
+  unicode-range: U+3130-318f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3190-319F-700.woff2) format('woff2');
+  unicode-range: U+3190-319f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-31A0-31BF-700.woff2) format('woff2');
+  unicode-range: U+31a0-31bf;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-31C0-31EF-700.woff2) format('woff2');
+  unicode-range: U+31c0-31ef;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-31F0-31FF-700.woff2) format('woff2');
+  unicode-range: U+31f0-31ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3200-32FF-700.woff2) format('woff2');
+  unicode-range: U+3200-32ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3300-33FF-700.woff2) format('woff2');
+  unicode-range: U+3300-33ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-3400-4DBF-700.woff2) format('woff2');
+  unicode-range: U+3400-4dbf;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-4E00-62FF-700.woff2) format('woff2');
+  unicode-range: U+4e00-62ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-6300-77FF-700.woff2) format('woff2');
+  unicode-range: U+6300-77ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-7800-8CFF-700.woff2) format('woff2');
+  unicode-range: U+7800-8cff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-8D00-9FFF-700.woff2) format('woff2');
+  unicode-range: U+8d00-9fff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-A000-A4CF-700.woff2) format('woff2');
+  unicode-range: U+a000-a4cf;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-AC00-D7AF-700.woff2) format('woff2');
+  unicode-range: U+ac00-d7af;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-D800-DFFF-700.woff2) format('woff2');
+  unicode-range: U+d800-dfff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-20000-215FF-700.woff2) format('woff2');
+  unicode-range: U+20000-215ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-21600-230FF-700.woff2) format('woff2');
+  unicode-range: U+21600-230ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-23100-245FF-700.woff2) format('woff2');
+  unicode-range: U+23100-245ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-24600-260FF-700.woff2) format('woff2');
+  unicode-range: U+24600-260ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-26100-275FF-700.woff2) format('woff2');
+  unicode-range: U+26100-275ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-27600-290FF-700.woff2) format('woff2');
+  unicode-range: U+27600-290ff;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-29100-2A0DF-700.woff2) format('woff2');
+  unicode-range: U+29100-2a0df;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-2A700-2B73F-700.woff2) format('woff2');
+  unicode-range: U+2a700-2b73f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-2B740-2C81F-700.woff2) format('woff2');
+  unicode-range: U+2b740-2c81f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-2B820-2CEAF-700.woff2) format('woff2');
+  unicode-range: U+2b820-2ceaf;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-2CEB0-2EBE0-700.woff2) format('woff2');
+  unicode-range: U+2ceb0-2ebe0;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-30000-3134F-700.woff2) format('woff2');
+  unicode-range: U+30000-3134f;
+}
+@font-face {
+  font-family: 'Rounded Mgen+ 1pp';
+  font-weight: 700;
+  font-display: swap;
+  src: url(RoundedMgen+1pp/rounded-mgenplus-1pp-bold-31350-323AF-700.woff2) format('woff2');
+  unicode-range: U+31350-323af;
+}

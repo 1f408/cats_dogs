@@ -1,0 +1,32 @@
+<div class="cat_ui cat_ui_name_{{.Name | html}}">
+<h6>入力:</h6>
+<div class="cat_ui_in">
+{{if len .Var -}}
+<table>
+<thead>
+  <tr>
+    <th align="left">種別</th>
+    <th align="left">値</th>
+  </tr>
+</thead>
+<tbody>
+{{range .Var -}}
+  <tr>
+    <td align="left">{{.Label}}</td>
+    <td align="left">
+      <input class="cat_ui_in_{{.Id | html}}" type="text" placeholder="{{.Comment | html}}"></input>
+    </td>
+  </tr>
+{{end -}}
+</tbody>
+</table>
+{{else -}}
+<span>確認:<input type="checkbox" class="cat_ui_ok" value="ok"></span>
+{{end -}}
+<span><button class="cat_ui_run" value="{{.Url | html}}">実行</button></span>
+</div>
+<h6>結果:</h6>
+<div class="cat_ui_out">
+<div class="cat_ui_res"><span>No data</span></div>
+</div>
+</div>

@@ -1,0 +1,4 @@
+{{if once "/lib/d3-dsv@3/d3-dsv.min.js" -}}
+<script defer src="{{html .Lib}}lib/d3-dsv@3/d3-dsv.min.js"></script>
+{{template "jslib_d3-fetch.tmpl" . -}}
+{{end -}}

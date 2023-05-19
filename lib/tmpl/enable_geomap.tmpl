@@ -1,0 +1,9 @@
+{{if once "enable_geomap.tmpl" -}}
+<link rel="preload" crossorigin as="style" type="text/css" href="{{html .Lib}}css/cls_geomap.css">
+<link rel="stylesheet" type="text/css" href="{{html .Lib}}css/cls_geomap.css">
+<link rel="preload" crossorigin as="style" type="text/css" href="{{html .Lib}}lib/leaflet@1.9/leaflet.css">
+<link rel="stylesheet" type="text/css" href="{{html .Lib}}lib/leaflet@1.9/leaflet.css">
+<script defer src="{{html .Lib}}lib/leaflet@1.9/leaflet.js"></script>
+<script defer src="{{html .Lib}}lib/topojson@3/topojson.min.js"></script>
+<script defer src="{{html .Lib}}js/do_geomap.js"></script>
+{{end -}}

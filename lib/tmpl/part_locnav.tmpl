@@ -1,0 +1,11 @@
+{{if eq .Options.LocationNavi "dirs" -}}
+{{with .PathLinks -}}
+<span class="location">{{range $i, $l := . -}}
+{{if eq $l.Path "" -}}
+{{if eq $i 0}}Top{{else}} / {{$l.Name}}{{end -}}
+{{else -}}
+{{if eq $i 0}}<a href="{{$l.Path}}">Top</a>{{else}} / <a href="{{$l.Path}}">{{$l.Name}}</a>{{end -}}
+{{end -}}
+{{end}}</span>
+{{end -}}
+{{end -}}

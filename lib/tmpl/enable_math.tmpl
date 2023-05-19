@@ -1,0 +1,6 @@
+{{if once "enable_math.tmpl" -}}
+<link rel="preload" crossorigin as="style" type="text/css" href="{{html .Lib}}lib/katex/katex.min.css">
+<link rel="stylesheet" type="text/css" href="{{html .Lib}}lib/katex/katex.min.css">
+<script defer src="{{html .Lib}}lib/katex/katex.min.js"></script>
+<script defer src="{{html .Lib}}js/do_katex.js"></script>
+{{end -}}

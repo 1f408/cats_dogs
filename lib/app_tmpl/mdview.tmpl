@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{template "part_head.tmpl" . -}}
+{{- if ne .Title "" -}}
+<title>{{html .Title}}</title>
+{{end -}}
+</head>
+<body>
+<noscript><p class="color-a"><strong>数式表示、ハイライト処理、Refererヘッダ強制削除等の各種処理にJavaScriptを利用しています。</strong></p></noscript>
+<div id="style_config"></div>
+{{- if ne .Toc "" -}}
+<nav id="toc"><details>
+<summary>目次</summary>
+{{.Toc}}
+</details></nav>
+{{end -}}
+{{template "part_locnav.tmpl" . -}}
+{{if .Options.DirectoryView -}}
+<div id="files" class="files">
+{{if .IsOpen -}}
+<details open>
+{{else -}}
+<details>
+{{end -}}
+<summary>ディレクトリ情報:</summary>
+<table>
+<thead><tr><th>Filename</th><th>Timestamp</th></tr></thead>
+<tbody>
+{{- range .Files -}}
+<tr><td><a href="{{html .Name}}">{{file_type .Name | svg_icon}}{{html .Name}}</a></td><td>{{html .Stamp}}</td>
+{{else -}}
+<tr><td>該当ファイルなし</a></td><td></td>
+{{end -}}
+{{end -}}
+</tbody>
+</table>
+</details>
+</div>
+{{if ne .Text "" -}}
+{{if eq .TextType "" -}}
+<div id="contents" class="contents">
+{{.Text -}}
+</div>
+{{else -}}
+<pre id="contents" class="contents"><code class="{{html .TextType}}">{{html .Text}}</code></pre>
+{{end -}}
+{{end -}}
+{{template "part_foot.tmpl" . -}}
+</body>
+</html>

@@ -1,0 +1,15 @@
+:not(pre) .mermaid {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 12px;
+  width: max-content;
+  overflow: visible;
+  color: var(--color-1-fg);
+  background-color: var(--color-1-bg);
+  border-radius: 6px;
+  letter-spacing: normal;
+}
+:not(pre) .mermaid > svg {
+  overflow: visible;
+  width: 90vw;
+}

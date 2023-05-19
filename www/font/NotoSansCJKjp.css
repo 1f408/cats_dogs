@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-00-02AF.woff2) format('woff2');
+  unicode-range: U+00-02af, U+02b0-036f, U+200c-200d;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-0370-2E7F.woff2) format('woff2');
+  unicode-range: U+0370-2e7f, U+200c-200d, U+02b0-036f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-2E80-2FFF.woff2) format('woff2');
+  unicode-range: U+2e80-2fff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3000-303F.woff2) format('woff2');
+  unicode-range: U+3000-303f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3040-309F.woff2) format('woff2');
+  unicode-range: U+3040-309f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-30A0-30FF.woff2) format('woff2');
+  unicode-range: U+30a0-30ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3100-312F.woff2) format('woff2');
+  unicode-range: U+3100-312f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3130-318F.woff2) format('woff2');
+  unicode-range: U+3130-318f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3190-319F.woff2) format('woff2');
+  unicode-range: U+3190-319f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-31A0-31BF.woff2) format('woff2');
+  unicode-range: U+31a0-31bf;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-31C0-31EF.woff2) format('woff2');
+  unicode-range: U+31c0-31ef;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-31F0-31FF.woff2) format('woff2');
+  unicode-range: U+31f0-31ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3200-32FF.woff2) format('woff2');
+  unicode-range: U+3200-32ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3300-33FF.woff2) format('woff2');
+  unicode-range: U+3300-33ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-3400-4DBF.woff2) format('woff2');
+  unicode-range: U+3400-4dbf;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-4E00-62FF.woff2) format('woff2');
+  unicode-range: U+4e00-62ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-6300-77FF.woff2) format('woff2');
+  unicode-range: U+6300-77ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-7800-8CFF.woff2) format('woff2');
+  unicode-range: U+7800-8cff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-8D00-9FFF.woff2) format('woff2');
+  unicode-range: U+8d00-9fff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-A000-A4CF.woff2) format('woff2');
+  unicode-range: U+a000-a4cf;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-AC00-D7AF.woff2) format('woff2');
+  unicode-range: U+ac00-d7af;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-D800-DFFF.woff2) format('woff2');
+  unicode-range: U+d800-dfff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-20000-215FF.woff2) format('woff2');
+  unicode-range: U+20000-215ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-21600-230FF.woff2) format('woff2');
+  unicode-range: U+21600-230ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-23100-245FF.woff2) format('woff2');
+  unicode-range: U+23100-245ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-24600-260FF.woff2) format('woff2');
+  unicode-range: U+24600-260ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-26100-275FF.woff2) format('woff2');
+  unicode-range: U+26100-275ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-27600-290FF.woff2) format('woff2');
+  unicode-range: U+27600-290ff;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-29100-2A0DF.woff2) format('woff2');
+  unicode-range: U+29100-2a0df;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-2A700-2B73F.woff2) format('woff2');
+  unicode-range: U+2a700-2b73f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-2B740-2C81F.woff2) format('woff2');
+  unicode-range: U+2b740-2c81f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-2B820-2CEAF.woff2) format('woff2');
+  unicode-range: U+2b820-2ceaf;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-2CEB0-2EBE0.woff2) format('woff2');
+  unicode-range: U+2ceb0-2ebe0;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-30000-3134F.woff2) format('woff2');
+  unicode-range: U+30000-3134f;
+}
+@font-face {
+  font-family: 'Noto Sans CJK';
+  font-display: swap;
+  src: url(NotoSansCJKjp/NotoSansCJKjp-VF-31350-323AF.woff2) format('woff2');
+  unicode-range: U+31350-323af;
+}

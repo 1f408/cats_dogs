@@ -1,0 +1,29 @@
+div.cat_ui {
+  border-radius: 3px;
+  border: 1px solid var(--color-0-g1);
+  padding: 0.25em;
+  margin: 3px 0px;
+  width: max-content;
+  min-width: 20em;
+}
+.cat_ui .cat_ui_in {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+}
+.cat_ui .cat_ui_in > * {
+  margin: 3px;
+}
+.cat_ui .cat_ui_res {
+  font-family: var(--fonts-mono);
+}
+
+.cat_ui .cat_ui_res textarea {
+  color: var(--color-1-c1);
+  width: 30em;
+  height: max-content;
+  min-height: 0;
+}
+.cat_ui .cat_ui_res table {
+  color: var(--color-1-c1);
+}

@@ -1,0 +1,142 @@
+.chrm-bg,
+.chrm-chrm,
+.chrm-line,
+.chrm-ln,
+.chrm-lnt,
+.chrm-hl,
+.chrm-lntable,
+.chrm-lntd,
+.chrm-lnlinks,
+.chrm-cl,
+.chrm-w,
+.chrm-err,
+.chrm-x {
+  color: var(--color-1-fg);
+}
+
+.chrm-k {
+  font-weight: bold;
+  color: var(--color-1-a1);
+}
+
+.chrm-kc,
+.chrm-kd,
+.chrm-kn,
+.chrm-kp,
+.chrm-kr,
+.chrm-kt {
+  color: var(--color-1-c1);
+}
+
+.chrm-n,
+.chrm-na,
+.chrm-nb,
+.chrm-bp,
+.chrm-nc,
+.chrm-no,
+.chrm-nd,
+.chrm-ni,
+.chrm-ne,
+.chrm-nf,
+.chrm-fm,
+.chrm-py
+{
+  color: var(--color-1-b1);
+}
+
+.chrm-nl,
+.chrm-nn,
+.chrm-nx,
+.chrm-nt
+{
+  color: var(--color-1-a1);
+}
+
+.chrm-nv,
+.chrm-vc,
+.chrm-vg,
+.chrm-vi,
+.chrm-vm
+{
+  color: var(--color-1-b1);
+}
+
+.chrm-l,
+.chrm-ld,
+.chrm-s,
+.chrm-sa,
+.chrm-sb,
+.chrm-sc,
+.chrm-dl,
+.chrm-sd,
+.chrm-s2,
+.chrm-se,
+.chrm-sh,
+.chrm-si,
+.chrm-sx,
+.chrm-sr,
+.chrm-s1,
+.chrm-ss,
+.chrm-m,
+.chrm-mb,
+.chrm-mf,
+.chrm-mh,
+.chrm-mi,
+.chrm-il,
+.chrm-mo {
+}
+
+.chrm-o,
+.chrm-ow,
+.chrm-p {
+}
+
+.chrm-c,
+.chrm-ch,
+.chrm-cm {
+  font-style: italic;
+  font-family: var(--fonts-maru);
+  color: var(--color-1-g1);
+}
+.chrm-cp,
+.chrm-cpf,
+.chrm-c1,
+.chrm-cs {
+  font-family: var(--fonts-maru);
+  color: var(--color-1-g1);
+}
+
+.chrm-g {
+}
+.chrm-gd {
+  text-decoration: line-through double;
+}
+.chrm-ge {
+  font-style: oblique;
+}
+.chrm-gr {
+  color: var(--color-1-a1);
+}
+.chrm-gh {
+  color: var(--color-1-c1);
+}
+.chrm-gi {
+  font-family: var(--fonts-serif);
+  font-style: normal;
+  color: var(--color-0-g1);
+}
+.chrm-go,
+.chrm-gp {
+  font-family: var(--fonts-maru);
+}
+.chrm-gs {
+  font-weight: bold;
+}
+.chrm-gu {
+  color: var(--color-1-c1);
+}
+.chrm-gt {
+}
+.chrm-gl {
+}
+

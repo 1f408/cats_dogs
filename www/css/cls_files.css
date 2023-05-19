@@ -1,0 +1,42 @@
+.files {
+  font-size: 16px;
+  word-wrap: break-word;
+
+  border: solid 1px var(--color-1-g2);
+  line-height: 1em;
+  padding: 1px 2px;
+  overflow: none;
+}
+
+.files details > summary {
+  font-family: var(--fonts-sans);
+  color: var(--color-0-b1);
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.files table {
+  max-height: 20em;
+  max-width: none;
+  overflow: auto;
+  width: 100%;
+
+  font-family: var(--fonts-mono);
+  border-width: 1px;
+}
+.files table a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.files th, .files td {
+  text-align: inherit;
+  padding: 1px 2px;
+}
+.files tr td:nth-child(1) {
+	width: 100%;
+}
+.files tr td:nth-child(2) {
+	width: max-content;
+	white-space: nowrap;
+}
+
