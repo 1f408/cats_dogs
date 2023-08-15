@@ -18,6 +18,7 @@ import (
 	"github.com/yuin/goldmark/renderer/html"
 
 	md_embed "cats_dogs/md2html/embed"
+	tasklist "cats_dogs/md2html/tasklist"
 )
 
 type Md2Html struct {
@@ -47,7 +48,7 @@ func NewMd2Html(mc *MdConfig) *Md2Html {
 		parser_exts = append(parser_exts, extension.Strikethrough)
 	}
 	if mc.Extension.TaskList {
-		parser_exts = append(parser_exts, extension.TaskList)
+		parser_exts = append(parser_exts, tasklist.TaskList)
 	}
 	if mc.Extension.DefinitionList {
 		parser_exts = append(parser_exts, extension.DefinitionList)

@@ -27,6 +27,6 @@ s/[ \t][ \t]*/ /g;
     continue
   fi
 
-  printf "\t%s\t%s;\n" "${mtype}" "${e_lst}"
+  printf "\t%s\t%s;\n" "${mtype}" "${e_lst[*]}"
 done | sort -u | expand -t4,64
 printf "}\n"

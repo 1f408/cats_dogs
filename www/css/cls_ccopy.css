@@ -1,0 +1,26 @@
+pre {
+  position: relative;
+}
+pre > button.ccopy {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+
+  border-color: var(--color-0-g2);
+  color: var(--color-0-fg);
+  background-color: var(--color-0-bg);
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  background-image: var(--image-copy);
+
+  opacity: 0;
+}
+pre:hover > button.ccopy {
+  opacity: 1;
+}
