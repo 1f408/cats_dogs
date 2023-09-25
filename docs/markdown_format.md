@@ -62,7 +62,7 @@ backlink_html = "<sup>戻る</sup>"
 |footnote|Footnotes拡張(PHP Markdownより)の有効無効|
 |**typographer**|SmartyPants変換の有効無効|
 |**cjk**|CJK対応機能の有効無効|
-|**emoji**|Emaji拡張([Emoji Chart Sheetより](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md))の有効無効(GitHub Custom Emoji種別の絵文字には、対応していません)|
+|**emoji**|Emoji拡張([Emoji Chart Sheetより](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md))の有効無効(GitHub Custom Emoji種別の絵文字には、対応していません)|
 |**autolinks**|AutoLinks拡張の有効無効|
 |**math**|MathJax表記(高速化のため、[KaTeX](https://katex.org/)を利用)の有効無効|
 |**mermaid**|[Mermaid](https://mermaid-js.github.io/mermaid/)表記の有効無効|
