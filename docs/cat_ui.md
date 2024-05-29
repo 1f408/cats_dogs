@@ -36,7 +36,7 @@ Cat UIが使われると、具体的には以下のような処理が行なわ�
 
 1. アクセスされたURLに対応するテンプレートファイルを変換される。(**cat\_tmplview**の処理)
 2. `{{cat_ui UI名}}`のテンプレート処理で、指定したUI名のUI設定ファイル(UI名 + `.ui`)したがって、HTMLを生成する。(**cat\_tmplview**の処理)
-3. UI(HTML)にAPI呼び出し処理を設定する。(**cat_ui.js**の処理)
+3. UI(HTML)にAPI呼び出し処理を設定する。(**cat\_ui.js**の処理)
 4. APIがAjax的に呼び出される。(**cat\_ui.js**の処理)
 5. APIのURLからAPI名を取り出す。(**cat\_multi\_getexec**の処理)
 6. API設定ファイル(API名 + `.api`)に従って、スクリプトを実行する。(**cat\_multi\_getexec**の処理)

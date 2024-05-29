@@ -1,9 +1,6 @@
-[cats\_ample]: https://github.com/1f408/cats_ample
-[cat\_om]: https://github.com/1f408/cat_om
-[cat\_nofn]: https://github.com/1f408/cat_nofn
 [デモの設定サンプル]: https://github.com/1f408/cats_ample
 [デモのYoubube動画]: https://www.youtube.com/playlist?list=PLTKODctBx8g-gmC8lrM2KeRM5N7qXCdcE
-[1f408 Orgianizatoin]: https://1f408.github.io/pages/
+
 # cats\_dogs(CAT'S DOCument System)
 
 cats\_dogsは、DB不要なMarkdownファイルベースのドキュメントシステムです。  
@@ -137,6 +134,10 @@ cats\_dogsは、手軽さのため、以下の問題を解決するように作�
     ```
     git clone git@github.com:1f408/cats_dogs.git
     ```
+    または、
+    ```
+    git clone https://github.com/1f408/cats_dogs.git
+    ```
 1. `cats_dogs`ディレクトリに移動する。
     ```
     cd cats_dogs
@@ -175,9 +176,9 @@ cats\_dogsは、以下の図のように、複数のモジュールが連係し�
     - LDAPでの認証処理
 - **cat\_getexec**
     - 出力を伴うシンプルなAPIを提供
-- **cat\_multi_getexec**
+- **cat\_multi\_getexec**
     - 出力を伴うシンプルなAPIを複数提供
-    - cat_tmplviewと連携して、シンプルなUIを量産する仕組みの一部です。
+    - cat\_tmplviewと連携して、シンプルなUIを量産する仕組みの一部です。
 - **cat\_mdview**
     - Markdownドキュメント表示
 - **cat\_tmplview**
@@ -207,7 +208,7 @@ cats\_dogsは、以下の図のように、複数のモジュールが連係し�
 - [cat\_printcsv](cat_printcsv.md)
     - シェルスクリプトからRFC1480準拠のCSVを一行だけ出力するための支援ツールです。([Cat UI](cat_ui.md)の支援ツール)
 - [cat\_ui.js](./cat_ui_js.md)
-    - cat_uiテンプレート関数をサポートするJavaScriptプログラムです。([Cat UI](cat_ui.md)の一部)
+    - cat\_uiテンプレート関数をサポートするJavaScriptプログラムです。([Cat UI](cat_ui.md)の一部)
 
 ## Cat UI(プラットフォーム)
 
@@ -215,21 +216,6 @@ cats\_dogsには、**Cat UIプラットフォーム**という、APIおよびWeb
 この仕組みを使うことで、APIやWeb UIを容易に作れます。例えば、`git pull`してレポジトリと同期するWeb UIを作れば、git+cats\_dogsで、簡易Githubもどきが実現可能になります。
 
 詳細は[Cat UI(プラットフォーム)](cat_ui.md)を参照してください。
-
-## 関連プロダクトおよび関連サイト
-
-- [1f408 Orgianizatoin]
-    - 関連プロダクトの紹介
-    - cats\_dogsの関連プロダクト全貌を知りたいあなたへ
-- [cats\_ample]
-    - 構築方法や設定方法をデモ動画を使って紹介
-    - cats\_dogsの使い方を知りたいあなたへ
-- [cat\_om]
-    - gitレポジトリfeed生成ツール
-    - gitのレポジトリと連係させた結果を、更新情報へAtom feedとして提供したいあなたへ
-- [cat\_nofn]
-    - cats\_dogsのためにつくった、サブセットフォント分割とフォント設定CSS生成ツール
-    - 好きなフォントをwebフォントとして使いまくりたいあなたへ
 
 ## 内部仕様
 
