@@ -28,9 +28,9 @@
 <thead><tr><th>Filename</th><th>Timestamp</th></tr></thead>
 <tbody>
 {{- range .Files -}}
-<tr><td><a href="{{html .Name}}">{{file_type .Name | svg_icon}}{{html .Name}}</a></td><td>{{html .Stamp}}</td>
+<tr><td><a href="{{html .Path}}">{{file_type .Name | svg_icon}}{{html .Name}}</a></td><td>{{html .Stamp}}</td></tr>
 {{else -}}
-<tr><td>該当ファイルなし</a></td><td></td>
+<tr><td>該当ファイルなし</a></td><td></td></tr>
 {{end -}}
 {{end -}}
 </tbody>

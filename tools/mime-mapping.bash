@@ -17,8 +17,6 @@ if [ ! -f "${MIME_TYPES}" ]; then
     exit 1
 fi
 
-printf "types {\n"
-
 declare -A ext_uniq
 
 sed '
@@ -28,7 +26,7 @@ s/[ \t]*$//;
 /^$/d;
 s/[ \t][ \t]*/ /g;
 /^\(text\|application\|image\|audio\|video\)\//!d;
-' "${MIME_TYPES}" | while read mtype ext; do
+' /etc/mime.types | while read mtype ext; do
   [ -z "${mtype}" ] && continue
   [ -z "${ext}" ] && continue
 
@@ -45,6 +43,10 @@ s/[ \t][ \t]*/ /g;
     continue
   fi
 
-  printf "\t%s\t%s;\n" "${mtype}" "${e_lst[*]}"
-done | sort -u | expand -t4,64
-printf "}\n"
+  pat='\.'
+  for ext in "${e_lst[@]}"; do
+    if [[ ! ${ext} =~ ${pat} ]]; then
+      printf "%s %s\n" "${ext}" "${mtype}"
+    fi
+  done
+done | sort -u | sort -k 2 -t " "

@@ -10,7 +10,7 @@ import (
 
 	"github.com/naoina/toml"
 
-	"cats_dogs/md2html"
+	"github.com/1f408/cats_eeds/md2html"
 )
 
 func die(err error) {
