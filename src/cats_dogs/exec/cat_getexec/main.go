@@ -15,8 +15,7 @@ import (
 	"github.com/naoina/toml"
 
 	"github.com/l4go/task"
-
-	"cats_dogs/authz"
+	"github.com/1f408/cats_eeds/authz"
 )
 
 func die(format string, v ...interface{}) {

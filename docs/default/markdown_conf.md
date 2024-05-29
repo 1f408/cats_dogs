@@ -1,10 +1,12 @@
+# Markdown処理のデフォルト設定
+
+```
 [extension]
 table = true
 strikethrough = true
 task_list = true
 definition_list = true
 footnote = true
-typographer = true
 cjk = true
 emoji = true
 autolinks = false
@@ -22,3 +24,4 @@ backlink_html = ""
 
 [emoji]
 mapping = ""
+```

@@ -1,3 +1,6 @@
+# 絵文字変換のデフォルト設定
+
+```
 ["1st place medal"]
 emoji = "🥇"
 aliases = ["1st_place_medal"]
@@ -7245,3 +7248,4 @@ aliases = ["zombie"]
 [zzz]
 emoji = "💤"
 aliases = ["zzz"]
+```

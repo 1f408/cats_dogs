@@ -6,7 +6,8 @@
 ```
 /
 +-- build.sh       # コマンドbulid用スクリプト
-+-- vendoring.sh   # go言語用vendoringスクリプト
+|
++-- docs/          # ドキュメント
 |
 +-- lib/           # ライブラリ置き場
 |   +-- app_mpl/       # アプリ用HTML template置き場

@@ -47,6 +47,7 @@ md_tmpl_name = "mdview.tmpl"
 
 index_name = "README.md"
 
+mime_ext_table = "xxx/etc/mime_extension_table.conf"
 markdown_ext = ["md", "markdown"]
 markdown_config  = "/xxx/etc/markdown.conf"
 theme_style = "radio"
@@ -99,7 +100,8 @@ cat_ui_tmpl_name = "cat_ui.tmpl"
 |**tmpl\_paths**|起動時に読み込みテンプレートファイルのリストです。|
 |**icon\_path**|svg\_iconテンプレート関数で生成するSVGアイコンのデータ置き場です。|
 |**md\_tmpl\_name**|Markdown MarkdownファイルをHTMLに変換した後で利用するテンプレート名です。このテンプレート名で**tmpl\_paths**でロードされたテンプレート中からテンプレートを選択するために利用されます。Markdownファイル以外(HTMLファイルなど)では、利用されません。未指定時はMarkdownファイルをテキストファイルとして処理するようになります。|
-|**markdown_ext**|Markdownファイルの拡張子リストです。システムの指定より優先されます。省略可能で、省略時の値は`["md", "markdown"]`です。|
+|**mime\_ext\_table**|拡張子とMIMEタイプ対応表のファイル名です。指定された内容を設定に追加します。主にシステム設定の情報が不足してる場合や、間違っている場合に利用します、詳細は[MIMEタイプ対応表](mime_ext_table.md)の説明を参照してください。|
+|**markdown\_ext**|Markdownファイルの拡張子リストです。システムの指定より優先されます。省略可能で、省略時の値は`["md", "markdown"]`です。|
 |**markdown\_config**|Markdownファイルの書式の指定です。詳細は [Markdown書式設定ファイル](markdown_format.md)の説明を参照してください。|
 |**theme\_style**|テーマの切り替え方法の指定です。`radio`を指定するとラジオボタンで選択します。`os`を指定するとOSの設定に従います。デフォルトは`radio`です。|
 |**location\_navi**|ページ位置のナビ表示の指定です。`dirs`を指定するとURLパス階層のナビゲーションを表示します。`none`を指定するとナビ表示を無効にします。|

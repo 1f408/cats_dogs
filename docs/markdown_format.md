@@ -4,7 +4,7 @@ cats\_dogsがサポートしているMarkdownの書式は、[CommonMark Spec](ht
 拡張した部分の仕様は、**markdown\_config**設定ファイルで、有効無効を切り替えるnことが出来ます。
 詳しくは後記の「**markdown\_config**設定ファイル」の項目を参照してください。
 
-Markdownのパーサーには、CommonMark互換な[yuin/goldmark](https://github.com/yuin/goldmark)へ機能を追加し、[microcosm-cc/bluemonday](https://github.com/microcosm-cc/bluemonday)をつかって、HTMLをサニタイズして安全性も高めたものを使っています。
+Markdownのパーサーには、CommonMark互換な[yuin/goldmark](https://github.com/yuin/goldmark)へ機能を追加し、[SYM01/htmlsanitizer](https://github.com/sym01/htmlsanitizer)をつかって、HTMLをサニタイズして安全性も高めたものを使っています。
 
 GitHubが追加サポートした、MathJax形式の数式、mermaid形式の図、GeoJSONでの地図埋め込みなどの機能も実装しており、GitHubと高い互換性を実現しています。
 
@@ -14,7 +14,8 @@ GitHubが追加サポートした、MathJax形式の数式、mermaid形式の図
 
 Markdownの処理を変更したい場合に利用する設定ファイルです。  
 **cat\_mdview**、**cat\_tmplview**の設定ファイルの**markdown\_config**パラメータに指定して利用します。  
-[デフォルト設定](../src/cats_dogs/md2html/markdown.conf)では、Markdownの拡張機能がほとんど無効になっています。必要に応じてカスタマイズしてください。
+デフォルト設定では、Markdownの拡張機能がほとんど無効になっています。必要に応じてカスタマイズしてください。  
+デフォルト設定の詳細については[Markdown処理のデフォルト設定](default/markdown_conf.md)を参照してください。
 
 以下は設定サンプルです。
 
@@ -25,7 +26,6 @@ strikethrough = true
 task_list = true
 definition_list = true
 footnote = true
-typographer = true
 cjk = true
 emoji = true
 autolinks = false
@@ -57,10 +57,9 @@ backlink_html = "<sup>戻る</sup>"
 | :--- | :--- |
 |**table**|Tables拡張の有効無効|
 |**strikethrough**|Strikethrough拡張の有効無効|
-|**task_list**|Task list items拡張の有効無効|
-|**definition_list**|Definition list拡張([PHP Markdownより](https://michelf.ca/projects/php-markdown/extra/#def-list))の有効無効|
+|**task\_list**|Task list items拡張の有効無効|
+|**definition\_list**|Definition list拡張([PHP Markdownより](https://michelf.ca/projects/php-markdown/extra/#def-list))の有効無効|
 |footnote|Footnotes拡張(PHP Markdownより)の有効無効|
-|**typographer**|SmartyPants変換の有効無効|
 |**cjk**|CJK対応機能の有効無効|
 |**emoji**|Emoji拡張([Emoji Chart Sheetより](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md))の有効無効(GitHub Custom Emoji種別の絵文字には、対応していません)|
 |**autolinks**|AutoLinks拡張の有効無効|
@@ -99,8 +98,8 @@ Emoji拡張の変換ルールを変更したいときに指定します。
 **mapping**に 絵文字のマッピングをTOMLファイルで記述することで、定義できます。  
 デフォルトの設定から変更したい場合に、このTOMLファイルで設定します。
 
-デフォルトではGitHubと同等な絵文字の変換ルールが設定がされています。(GitHubのGitHub Custom Emojiは画像で実現しているので、対応していません。)  
-デフォルトの設定については[デフォルト設定ファイル](../src/cats_dogs/md2html/emoji_mapping.conf)を参照してください。
+デフォルト設定ではGitHubと同等な絵文字の変換ルールが設定がされています。(GitHubのGitHub Custom Emojiは画像で実現しているので、対応していません。)  
+デフォルト設定の詳細については[絵文字変換のデフォルト設定](default/emoji_mapping_conf.md)を参照してください。
 
 例えば、デフォルトでは、:+1:(`:+1:`)は、以下のように定義されています。
 
@@ -120,18 +119,20 @@ aliases = ["+1", "thumbsup"]
 
 この表記を対応したい絵文字の数だけ記述して利用します。
 
-GitHubの最新の変換ルールが欲しいだけの場合は、[cat_gen_emoji_mappingコマンド](cat_gen_emoji_mapping.md)で、簡単に生成できます。(デフォルトの設定もこのコマンドで生成した物です。)
+GitHubの最新の変換ルールが欲しいだけの場合は、[cat\_gen\_emoji\_mappingコマンド](cat_gen_emoji_mapping.md)で、簡単に生成できます。(デフォルトの設定もこのコマンドで生成した物です。)
 
 ## `[embed]`の要素
 
 `[embed]`では、以下のパラメータで、音声や動画の埋め込み方法を指定します。
 - **rules** audio/video/Iframeへの変換ルールファイルを指定します。
 
-[デフォルト設定](../src/cats_dogs/md2html/embed_rules.conf)では、以下のファイルの埋め込みに対応しています。
+デフォルト設定では、以下のファイルの埋め込みに対応しています。
 - ローカルの動画ファイル(`*.mp4`、`*.m4v`、`*.webm`)
 - ローカルの音声ファイル(`*.mp3`、`*.m4a`、`*.wav`、`*.wave`、`*.flac`)
 - YouTube動画(`www.youtube.com`、`youtube.be`)
 - vimeo動画(`vimeo.com`、`player.vimeo.com`)
+
+デフォルト設定の詳細については[埋め込み処理のデフォルト設定](default/embed_rules_conf.md)を参照してください。
 
 ### audio/video/Iframeへの変換ルールファイル
 
@@ -273,7 +274,7 @@ player=""
 その手順は以下の通りです。
 
 1. JavaScriptライブラリロード用のテンプレートファイルを作成する。
-    - 以下はtwitterの例([enable_twitter.tmpl](../lib/tmpl/enable_twitter.tmpl)の内容)
+    - 以下はtwitterの例([enable\_twitter.tmpl](../lib/tmpl/enable_twitter.tmpl)の内容)
     ```
     {{if once "enable_twitter.tmpl" -}}
     <script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -281,7 +282,7 @@ player=""
     ```
     - ロードタイミングは`defer`を指定してください。(コンテンツの読み込みが完了した後で、JavaScriptライブラリが動作する必要があるためです。)
 1. JavaScriptライブラリをロードするテンプレートファイルを有効にする。
-    - 作成したテンプレートファイルの指定を、[part_head.tmpl](../lib/tmpl/part_head.tmpl)へ追加する。
+    - 作成したテンプレートファイルの指定を、[part\_head.tmpl](../lib/tmpl/part_head.tmpl)へ追加する。
     - 以下は、`enable_twitter.tmpl`を有効化する例です。
     ```
     {{template "enable_twitter.tmpl" -}}

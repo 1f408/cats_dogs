@@ -1,3 +1,6 @@
+# 埋め込み処理のデフォルト設定
+
+```
 video_ext = ["mp4", "m4v", "webm"]
 audio_ext = ["mp3", "m4a", "wav", "wave", "flac"]
 
@@ -36,3 +39,4 @@ host="player.vimeo.com"
 type="path"
 path="/video"
 player=""
+```

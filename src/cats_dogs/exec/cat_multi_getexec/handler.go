@@ -12,8 +12,7 @@ import (
 	"github.com/naoina/toml"
 
 	"github.com/l4go/var_mtx"
-
-	"cats_dogs/authz"
+	"github.com/1f408/cats_eeds/authz"
 )
 
 type OneGetExecConfig struct {

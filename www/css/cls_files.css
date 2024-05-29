@@ -39,4 +39,7 @@
 	width: max-content;
 	white-space: nowrap;
 }
+.files svg.icon {
+  padding: 0px 1px;
+}
 
