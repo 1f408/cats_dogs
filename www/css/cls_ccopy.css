@@ -1,26 +1,41 @@
-pre {
-  position: relative;
-}
-pre > button.ccopy {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 32px;
-  height: 32px;
+@layer base {
+  @media print {
+    pre > button.ccopy {
+      display: none;
+    }
+  }
+  pre {
+    position: relative;
+    & > button.ccopy {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 32px;
+      height: 32px;
+      margin: 0;
+      padding: 3px;
 
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 4px;
+      border-color: var(--color-0-g2);
+      opacity: 0;
+      background-color: var(--color-0-bg);
 
-  border-color: var(--color-0-g2);
-  color: var(--color-0-fg);
-  background-color: var(--color-0-bg);
-  background-position: 50% center;
-  background-repeat: no-repeat;
-  background-image: var(--image-copy);
-
-  opacity: 0;
-}
-pre:hover > button.ccopy {
-  opacity: 1;
+      div.ccopy_icon {
+        height: 100%;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        background-color: var(--color-0-g1);
+        mask-posittion: center;
+        mask-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" strok="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 7H7V5H13V7Z M13 11H7V9H13V11Z M7 15H13V13H7V15Z M3 19V1H17V5H21V23H7V19H3ZM15 17V3H5V17H15ZM17 7V19H9V21H19V7H17Z" /></svg>');
+        mask-repeat: no-repeat;
+        mask-size: contain;
+      }
+    }
+    &:hover > button.ccopy {
+      opacity: 1;
+    }
+  }
 }

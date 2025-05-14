@@ -54,8 +54,8 @@ n="1"
 |**authn\_user\_header**|利用者のユーザ名が渡されるHTTPヘッダーを指定します。省略可能で、省略時は(X-Forwarded-User)になります。|
 
 ## **command\_argv**のコマンド引数
-第1引数は、HTTPヘッダーで渡されたユーザー名(**authn\_user\_header**で変更可能)が渡われます。  
+第1引数には、**authn\_user\_header**で指定したHTTPヘッダーに渡されたユーザー名が渡われます。  
 第2引数以降は、**command\_argv**に指定したURL queryのパラメータが渡されます。
 
-**command\_argv**に指定したURL queryが、入力として渡されなかった場合、**default\_argv**に該当の指定があれば、その値を使ってコマンドを実行し、
-**default\_argv**に指定がない場合は、HTTPのエラーにします。
+**command\_argv**に指定したURL queryが入力として渡されなかった場合、**default\_argv**に指定があれば、その値を使ってコマンドを実行します。
+**command\_argv**に指定したURL queryが渡されず、**default\_argv**にも指定がない場合は、HTTPのエラーにします。

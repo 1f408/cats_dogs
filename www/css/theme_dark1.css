@@ -1,36 +1,20 @@
-:root {
-  --color-schame: dark;
-  --color-0-fg: hsl(0, 0%, 100%);
-  --color-0-g1: hsl(0, 0%, 70%);
-  --color-0-g2: hsl(0, 0%, 25%);
-  --color-0-bg: hsl(0, 0%, 10%);
-
-  --color-0-t0: hsla(0, 0%, 10%, 0);
-  --color-0-t1: hsla(0, 0%, 10%, 0.5);
-  --color-0-t2: hsla(0, 0%, 70%, 0.5);
-
-  --color-0-a1: hsl(10, 100%, 75%);
-  --color-0-a2: hsl(10, 100%, 25%);
-  --color-0-b1: hsl(207, 100%, 75%);
-  --color-0-b2: hsl(207, 100%, 25%);
-  --color-0-c1: hsl(110, 100%, 75%);
-  --color-0-c2: hsl(110, 100%, 25%);
-
-  --color-1-fg: hsl(0, 0%, 90%);
-  --color-1-g1: hsl(0, 0%, 60%);
-  --color-1-g2: hsl(0, 0%, 15%);
-  --color-1-bg: hsl(0, 0%, 0%);
-
-  --color-1-t0: hsla(0, 0%, 0%, 0);
-  --color-1-t1: hsla(0, 0%, 0%, 0.5);
-  --color-1-t2: hsla(0, 0%, 60%, 0.5);
-
-  --color-1-a1: hsl(10, 100%, 65%);
-  --color-1-a2: hsl(10, 100%, 15%);
-  --color-1-b1: hsl(207, 100%, 65%);
-  --color-1-b2: hsl(207, 100%, 15%);
-  --color-1-c1: hsl(110, 100%, 65%);
-  --color-1-c2: hsl(110, 100%, 15%);
-
-  --image-copy: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' ><path d='M13 7H7V5H13V7Z' fill='hsl(0, 0%, 70%)' /><path d='M13 11H7V9H13V11Z' fill='hsl(0, 0%, 70%)' /><path d='M7 15H13V13H7V15Z' fill='hsl(0, 0%, 70%)'/><path fill-rule='evenodd' clip-rule='evenodd' d='M3 19V1H17V5H21V23H7V19H3ZM15 17V3H5V17H15ZM17 7V19H9V21H19V7H17Z' fill='hsl(0, 0%, 70%)' /></svg>");
+@layer theme {
+  /* for normal color vision */
+  :root {
+    @media not print {
+      --color-schame: dark;
+      --base-color-fg-L: 0.9;
+      --base-color-bg-L: 0.125;
+      --color-chroma: 0.1875;
+    }
+    @media print {
+      --color-schame: light;
+      --base-color-fg-L: 0.25;
+      --base-color-bg-L: 1.0;
+      --color-chroma: 0.25;
+    }
+    --base-color-a-H: 30;
+    --base-color-b-H: 200;
+    --base-color-c-H: 120;
+  }
 }

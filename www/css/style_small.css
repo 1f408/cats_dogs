@@ -1,0 +1,13 @@
+@layer page_style {
+  @media not print {
+    :root {
+      font-size: 13.5px;
+    }
+  }
+
+  @media print {
+    :root {
+      font-size: 9px;
+    }
+  }
+}

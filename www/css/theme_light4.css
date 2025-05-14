@@ -1,0 +1,12 @@
+@layer theme {
+  /* for Tritanopia */
+  :root {
+    --color-schame: light;
+    --base-color-fg-L: 0.25;
+    --base-color-bg-L: 0.95;
+    --color-chroma: 0.25;
+    --base-color-a-H: 0;
+    --base-color-b-H: 285;
+    --base-color-c-H: 150;
+  }
+}

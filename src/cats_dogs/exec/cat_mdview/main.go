@@ -30,7 +30,7 @@ func init() {
 		os.Exit(1)
 	}
 
-    cfg, err := mdview.NewMdViewConfig(flag.Arg(0))
+	cfg, err := mdview.NewMdViewConfig(flag.Arg(0))
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)

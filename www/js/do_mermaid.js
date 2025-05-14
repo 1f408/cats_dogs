@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', function(){
     theme: (is_dark ? 'dark' : 'default'),
     startOnLoad: false,
     darkMode: is_dark,
+    gantt: {
+      useWidth: window.innerWidth,
+    },
   };
 
-  const mermaidAPI = mermaid.mermaidAPI;
-  mermaidAPI.initialize(config);
+  mermaid.initialize(config);
   let cnt = 0;
   function gen_id() {
     let id = "mermaid-" + String(cnt);
@@ -29,7 +31,10 @@ document.addEventListener('DOMContentLoaded', function(){
       tgt.classList.add('mermaid');
       let text = src.textContent;
       src.parentElement.replaceWith(tgt);
-      tgt.innerHTML = mermaidAPI.render(id, text, undefined, tgt);
+      mermaid.render(id, text, tgt).then(function(res){
+        const { svg } = res;
+        tgt.innerHTML = svg;
+      });
     } catch (error) {
       console.log("mermaid:", error);
     }

@@ -1,16 +1,14 @@
 # cat\_ui.js(cat\_uiテンプレート関数サポートJavaScript)
 
-cat\_ui.jsは、`cat_ui`テンプレート関数で生成されたUIのHTMLを、指定されたAPIを呼び出すように加工するJavaScriptプログラムです。  
-[Cat UI(プラットフォーム)](cat_ui.md)を実現する為に作られたプログラムです。
+[Cat UI(プラットフォーム)](cat_ui.md)を支援するJavaScriptプログラムです。  
+`cat_ui`テンプレート関数で生成されたWeb UIのHTMLへ、指定のAPIを呼び出す変更をします。
 
-API出力のContent-Typeに合わせて、出力を変える機能を持っています。
+以下のように、API出力の`Content-Type`で出力形式が変わります。
 
-現時点では以下の通り。
+| `Content-Type` | 出力形式 |
+| :-- | :-- |
+| `text/csv` | `table`タグを使った表での出力 |
+| その他 | `textarea`タグを使ったテキストでの出力 |
 
-- text/csv
-    - tableに変換する。
-- その他
-    - textareaに入ったテキストに変換する。
-
-この`cat_ui.js`のJavaScriptファイルが適切にロードされるように[cat\_tmplview](./cat_tmplview.md)のテンプレートを記述してください。  
-レポジトリ内のテンプレート`lib/tmpl/part_foot.tmpl`に`cat_ui.js`ロードの記述があります。
+`cat_ui.js`ファイルがJavaScriptとして正しくロードされるように[cat\_tmplview](./cat_tmplview.md)のテンプレートを記述する必要があります。  
+標準のテンプレートファイルでは、`lib/tmpl/part_foot.tmpl`に`cat_ui.js`をロードする記述があります。

@@ -1,0 +1,27 @@
+@layer theme {
+  :root {
+    --base-color-a-H: 30;
+    --base-color-b-H: 200;
+    --base-color-c-H: 120;
+    @media not (prefers-color-scheme: dark) {
+      --color-schame: light;
+      --base-color-fg-L: 0.25;
+      --base-color-bg-L: 0.95;
+      --color-chroma: 0.25;
+    }
+    @media (prefers-color-scheme: dark) {
+      @media print {
+        --color-schame: light;
+        --base-color-fg-L: 0.25;
+        --base-color-bg-L: 0.95;
+        --color-chroma: 0.25;
+      }
+      @media not print {
+        --color-schame: dark;
+        --base-color-fg-L: 0.9;
+        --base-color-bg-L: 0.125;
+        --color-chroma: 0.1875;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@layer theme {
+  /* for Tritanopia */
+  :root {
+    @media not print {
+      --color-schame: dark;
+      --base-color-fg-L: 0.9;
+      --base-color-bg-L: 0.125;
+      --color-chroma: 0.1875;
+    }
+    @media print {
+      --color-schame: light;
+      --base-color-fg-L: 0.25;
+      --base-color-bg-L: 1.0;
+      --color-chroma: 0.25;
+    }
+    --base-color-a-H: 0;
+    --base-color-b-H: 285;
+    --base-color-c-H: 150;
+  }
+}

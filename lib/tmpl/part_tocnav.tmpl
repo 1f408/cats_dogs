@@ -1,0 +1,14 @@
+{{if ne .Toc "" -}}
+{{if eq .Options.TocNavi "none" -}}
+{{else if eq .Options.TocNavi "static" -}}
+<nav id="toc">
+<h5>目次</h5>
+{{.Toc}}
+</nav>
+{{else -}}
+<nav id="toc"><details>
+<summary>目次</summary>
+{{.Toc}}
+</details></nav>
+{{end -}}
+{{end -}}

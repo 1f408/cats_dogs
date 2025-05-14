@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     katex.render(elem.textContent, elem, {
       displayMode: false,
       throwOnError: false,
+      strict: false,
     });
   });
   document.body.querySelectorAll(
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
     katex.render(elem.textContent, p, {
       displayMode: true,
       throwOnError: false,
+      strict: false,
     });
     elem.parentElement.replaceWith(p);
   });
