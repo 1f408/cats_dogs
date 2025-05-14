@@ -534,7 +534,7 @@ emoji = "😁"
 aliases = ["grin"]
 
 [beans]
-emoji = "\U0001fad8"
+emoji = "🫘"
 aliases = ["beans"]
 
 [bear]
@@ -614,7 +614,7 @@ emoji = "🦬"
 aliases = ["bison"]
 
 ["biting lip"]
-emoji = "\U0001fae6"
+emoji = "🫦"
 aliases = ["biting_lip"]
 
 ["black bird"]
@@ -806,7 +806,7 @@ emoji = "🧋"
 aliases = ["bubble_tea"]
 
 [bubbles]
-emoji = "\U0001fae7"
+emoji = "🫧"
 aliases = ["bubbles"]
 
 [bucket]
@@ -1234,7 +1234,7 @@ emoji = "©️"
 aliases = ["copyright"]
 
 [coral]
-emoji = "\U0001fab8"
+emoji = "🪸"
 aliases = ["coral"]
 
 ["couch and lamp"]
@@ -1330,7 +1330,7 @@ emoji = "👑"
 aliases = ["crown"]
 
 [crutch]
-emoji = "\U0001fa7c"
+emoji = "🩼"
 aliases = ["crutch"]
 
 ["crying cat"]
@@ -1510,7 +1510,7 @@ emoji = "🐬"
 aliases = ["dolphin", "flipper"]
 
 [donkey]
-emoji = "\U0001facf"
+emoji = "🫏"
 aliases = ["donkey"]
 
 [door]
@@ -1518,7 +1518,7 @@ emoji = "🚪"
 aliases = ["door"]
 
 ["dotted line face"]
-emoji = "\U0001fae5"
+emoji = "🫥"
 aliases = ["dotted_line_face"]
 
 ["dotted six-pointed star"]
@@ -1674,7 +1674,7 @@ emoji = "🧝"
 aliases = ["elf"]
 
 ["empty nest"]
-emoji = "\U0001fab9"
+emoji = "🪹"
 aliases = ["empty_nest"]
 
 ["enraged face"]
@@ -1734,7 +1734,7 @@ emoji = "😮\u200d💨"
 aliases = ["face_exhaling"]
 
 ["face holding back tears"]
-emoji = "\U0001f979"
+emoji = "🥹"
 aliases = ["face_holding_back_tears"]
 
 ["face in clouds"]
@@ -1758,7 +1758,7 @@ emoji = "😵"
 aliases = ["dizzy_face"]
 
 ["face with diagonal mouth"]
-emoji = "\U0001fae4"
+emoji = "🫤"
 aliases = ["face_with_diagonal_mouth"]
 
 ["face with hand over mouth"]
@@ -1778,7 +1778,7 @@ emoji = "🧐"
 aliases = ["monocle_face"]
 
 ["face with open eyes and hand over mouth"]
-emoji = "\U0001fae2"
+emoji = "🫢"
 aliases = ["face_with_open_eyes_and_hand_over_mouth"]
 
 ["face with open mouth"]
@@ -1786,7 +1786,7 @@ emoji = "😮"
 aliases = ["open_mouth"]
 
 ["face with peeking eye"]
-emoji = "\U0001fae3"
+emoji = "🫣"
 aliases = ["face_with_peeking_eye"]
 
 ["face with raised eyebrow"]
@@ -3150,7 +3150,7 @@ emoji = "😳"
 aliases = ["flushed"]
 
 [flute]
-emoji = "\U0001fa88"
+emoji = "🪈"
 aliases = ["flute"]
 
 [fly]
@@ -3178,7 +3178,7 @@ emoji = "🙏"
 aliases = ["pray"]
 
 ["folding hand fan"]
-emoji = "\U0001faad"
+emoji = "🪭"
 aliases = ["folding_hand_fan"]
 
 [fondue]
@@ -3298,7 +3298,7 @@ emoji = "👻"
 aliases = ["ghost"]
 
 ["ginger root"]
-emoji = "\U0001fada"
+emoji = "🫚"
 aliases = ["ginger_root"]
 
 [giraffe]
@@ -3358,7 +3358,7 @@ emoji = "🥽"
 aliases = ["goggles"]
 
 [goose]
-emoji = "\U0001fabf"
+emoji = "🪿"
 aliases = ["goose"]
 
 [gorilla]
@@ -3398,7 +3398,7 @@ emoji = "🟩"
 aliases = ["green_square"]
 
 ["grey heart"]
-emoji = "\U0001fa76"
+emoji = "🩶"
 aliases = ["grey_heart"]
 
 ["grimacing face"]
@@ -3450,7 +3450,7 @@ emoji = "🎸"
 aliases = ["guitar"]
 
 ["hair pick"]
-emoji = "\U0001faae"
+emoji = "🪮"
 aliases = ["hair_pick"]
 
 [hamburger]
@@ -3470,7 +3470,7 @@ emoji = "🛠️"
 aliases = ["hammer_and_wrench"]
 
 [hamsa]
-emoji = "\U0001faac"
+emoji = "🪬"
 aliases = ["hamsa"]
 
 [hamster]
@@ -3482,7 +3482,7 @@ emoji = "🖐️"
 aliases = ["raised_hand_with_fingers_splayed"]
 
 ["hand with index finger and thumb crossed"]
-emoji = "\U0001faf0"
+emoji = "🫰"
 aliases = ["hand_with_index_finger_and_thumb_crossed"]
 
 [handbag]
@@ -3522,7 +3522,7 @@ emoji = "❣️"
 aliases = ["heavy_heart_exclamation"]
 
 ["heart hands"]
-emoji = "\U0001faf6"
+emoji = "🫶"
 aliases = ["heart_hands"]
 
 ["heart on fire"]
@@ -3546,7 +3546,7 @@ emoji = "💲"
 aliases = ["heavy_dollar_sign"]
 
 ["heavy equals sign"]
-emoji = "\U0001f7f0"
+emoji = "🟰"
 aliases = ["heavy_equals_sign"]
 
 [hedgehog]
@@ -3686,7 +3686,7 @@ emoji = "🛖"
 aliases = ["hut"]
 
 [hyacinth]
-emoji = "\U0001fabb"
+emoji = "🪻"
 aliases = ["hyacinth"]
 
 [ice]
@@ -3706,7 +3706,7 @@ emoji = "⛸️"
 aliases = ["ice_skate"]
 
 ["identification card"]
-emoji = "\U0001faaa"
+emoji = "🪪"
 aliases = ["identification_card"]
 
 ["inbox tray"]
@@ -3718,7 +3718,7 @@ emoji = "📨"
 aliases = ["incoming_envelope"]
 
 ["index pointing at the viewer"]
-emoji = "\U0001faf5"
+emoji = "🫵"
 aliases = ["index_pointing_at_the_viewer"]
 
 ["index pointing up"]
@@ -3758,7 +3758,7 @@ emoji = "🎃"
 aliases = ["jack_o_lantern"]
 
 [jar]
-emoji = "\U0001fad9"
+emoji = "🫙"
 aliases = ["jar"]
 
 [jeans]
@@ -3766,7 +3766,7 @@ emoji = "👖"
 aliases = ["jeans"]
 
 [jellyfish]
-emoji = "\U0001fabc"
+emoji = "🪼"
 aliases = ["jellyfish"]
 
 [joker]
@@ -3850,7 +3850,7 @@ emoji = "9️⃣"
 aliases = ["nine"]
 
 [khanda]
-emoji = "\U0001faaf"
+emoji = "🪯"
 aliases = ["khanda"]
 
 ["kick scooter"]
@@ -4002,11 +4002,11 @@ emoji = "↔️"
 aliases = ["left_right_arrow"]
 
 ["leftwards hand"]
-emoji = "\U0001faf2"
+emoji = "🫲"
 aliases = ["leftwards_hand"]
 
 ["leftwards pushing hand"]
-emoji = "\U0001faf7"
+emoji = "🫷"
 aliases = ["leftwards_pushing_hand"]
 
 [leg]
@@ -4026,7 +4026,7 @@ emoji = "🎚️"
 aliases = ["level_slider"]
 
 ["light blue heart"]
-emoji = "\U0001fa75"
+emoji = "🩵"
 aliases = ["light_blue_heart"]
 
 ["light bulb"]
@@ -4098,7 +4098,7 @@ emoji = "🧴"
 aliases = ["lotion_bottle"]
 
 [lotus]
-emoji = "\U0001fab7"
+emoji = "🪷"
 aliases = ["lotus"]
 
 ["loudly crying face"]
@@ -4122,7 +4122,7 @@ emoji = "🤟"
 aliases = ["love_you_gesture"]
 
 ["low battery"]
-emoji = "\U0001faab"
+emoji = "🪫"
 aliases = ["low_battery"]
 
 [luggage]
@@ -4486,7 +4486,7 @@ emoji = "🍁"
 aliases = ["maple_leaf"]
 
 [maracas]
-emoji = "\U0001fa87"
+emoji = "🪇"
 aliases = ["maracas"]
 
 ["martial arts uniform"]
@@ -4526,7 +4526,7 @@ emoji = "🍈"
 aliases = ["melon"]
 
 ["melting face"]
-emoji = "\U0001fae0"
+emoji = "🫠"
 aliases = ["melting_face"]
 
 [memo]
@@ -4614,7 +4614,7 @@ emoji = "🪞"
 aliases = ["mirror"]
 
 ["mirror ball"]
-emoji = "\U0001faa9"
+emoji = "🪩"
 aliases = ["mirror_ball"]
 
 [moai]
@@ -4666,7 +4666,7 @@ emoji = "🎑"
 aliases = ["rice_scene"]
 
 [moose]
-emoji = "\U0001face"
+emoji = "🫎"
 aliases = ["moose"]
 
 [mosque]
@@ -4794,7 +4794,7 @@ emoji = "🤓"
 aliases = ["nerd_face"]
 
 ["nest with eggs"]
-emoji = "\U0001faba"
+emoji = "🪺"
 aliases = ["nest_with_eggs"]
 
 ["nesting dolls"]
@@ -5058,7 +5058,7 @@ emoji = "🖌️"
 aliases = ["paintbrush"]
 
 ["palm down hand"]
-emoji = "\U0001faf3"
+emoji = "🫳"
 aliases = ["palm_down_hand"]
 
 ["palm tree"]
@@ -5066,7 +5066,7 @@ emoji = "🌴"
 aliases = ["palm_tree"]
 
 ["palm up hand"]
-emoji = "\U0001faf4"
+emoji = "🫴"
 aliases = ["palm_up_hand"]
 
 ["palms up together"]
@@ -5122,7 +5122,7 @@ emoji = "🐾"
 aliases = ["feet", "paw_prints"]
 
 ["pea pod"]
-emoji = "\U0001fadb"
+emoji = "🫛"
 aliases = ["pea_pod"]
 
 ["peace symbol"]
@@ -5346,7 +5346,7 @@ emoji = "👳"
 aliases = ["person_with_turban"]
 
 ["person with crown"]
-emoji = "\U0001fac5"
+emoji = "🫅"
 aliases = ["person_with_crown"]
 
 ["person with skullcap"]
@@ -5446,7 +5446,7 @@ emoji = "🏓"
 aliases = ["ping_pong"]
 
 ["pink heart"]
-emoji = "\U0001fa77"
+emoji = "🩷"
 aliases = ["pink_heart"]
 
 ["pirate flag"]
@@ -5478,7 +5478,7 @@ emoji = "⏯️"
 aliases = ["play_or_pause_button"]
 
 ["playground slide"]
-emoji = "\U0001f6dd"
+emoji = "🛝"
 aliases = ["playground_slide"]
 
 ["pleading face"]
@@ -5558,7 +5558,7 @@ emoji = "💷"
 aliases = ["pound"]
 
 ["pouring liquid"]
-emoji = "\U0001fad7"
+emoji = "🫗"
 aliases = ["pouring_liquid"]
 
 ["pouting cat"]
@@ -5570,11 +5570,11 @@ emoji = "📿"
 aliases = ["prayer_beads"]
 
 ["pregnant man"]
-emoji = "\U0001fac3"
+emoji = "🫃"
 aliases = ["pregnant_man"]
 
 ["pregnant person"]
-emoji = "\U0001fac4"
+emoji = "🫄"
 aliases = ["pregnant_person"]
 
 ["pregnant woman"]
@@ -5826,11 +5826,11 @@ emoji = "🤜"
 aliases = ["fist_right"]
 
 ["rightwards hand"]
-emoji = "\U0001faf1"
+emoji = "🫱"
 aliases = ["rightwards_hand"]
 
 ["rightwards pushing hand"]
-emoji = "\U0001faf8"
+emoji = "🫸"
 aliases = ["rightwards_pushing_hand"]
 
 [ring]
@@ -5838,7 +5838,7 @@ emoji = "💍"
 aliases = ["ring"]
 
 ["ring buoy"]
-emoji = "\U0001f6df"
+emoji = "🛟"
 aliases = ["ring_buoy"]
 
 ["ringed planet"]
@@ -5934,7 +5934,7 @@ emoji = "🧂"
 aliases = ["salt"]
 
 ["saluting face"]
-emoji = "\U0001fae1"
+emoji = "🫡"
 aliases = ["saluting_face"]
 
 [sandwich]
@@ -6026,7 +6026,7 @@ emoji = "🪡"
 aliases = ["sewing_needle"]
 
 ["shaking face"]
-emoji = "\U0001fae8"
+emoji = "🫨"
 aliases = ["shaking_face"]
 
 ["shallow pan of food"]
@@ -6734,7 +6734,7 @@ emoji = "🔱"
 aliases = ["trident"]
 
 [troll]
-emoji = "\U0001f9cc"
+emoji = "🧌"
 aliases = ["troll"]
 
 [trolleybus]
@@ -6966,7 +6966,7 @@ emoji = "🐋"
 aliases = ["whale2"]
 
 [wheel]
-emoji = "\U0001f6de"
+emoji = "🛞"
 aliases = ["wheel"]
 
 ["wheel of dharma"]
@@ -7046,7 +7046,7 @@ emoji = "🍷"
 aliases = ["wine_glass"]
 
 [wing]
-emoji = "\U0001fabd"
+emoji = "🪽"
 aliases = ["wing"]
 
 ["winking face"]
@@ -7058,7 +7058,7 @@ emoji = "😜"
 aliases = ["stuck_out_tongue_winking_eye"]
 
 [wireless]
-emoji = "\U0001f6dc"
+emoji = "🛜"
 aliases = ["wireless"]
 
 [wolf]
@@ -7430,7 +7430,7 @@ emoji = "✍️"
 aliases = ["writing_hand"]
 
 [x-ray]
-emoji = "\U0001fa7b"
+emoji = "🩻"
 aliases = ["x_ray"]
 
 [yarn]

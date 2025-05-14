@@ -1,5 +1,7 @@
 [デモの設定サンプル]: https://github.com/1f408/cats_ample
 [デモのYoubube動画]: https://www.youtube.com/playlist?list=PLTKODctBx8g-gmC8lrM2KeRM5N7qXCdcE
+[cat\_nofn]: https://github.com/1f408/cat_nofn
+[cats\_ample]: https://github.com/1f408/cats_ample
 
 # cats\_dogs(CAT'S DOCument System)
 
@@ -71,7 +73,7 @@ cats\_dogsは、手軽さのため、以下の問題を解決するように作�
 3. 共有するので、見た目は相手によって変わって欲しくない。
     - 名前などの固有名詞の漢字が化けて欲しくない。(第4水準の漢字ぐらいは、表示して欲しい)
     - OSやブラウザが違っても表示できて欲しい。
-4. 出来るだけ軽く動いて欲しい。
+4. できるだけ軽く動いて欲しい。
     - 非力なサーバで動かないとコストがかかりすぎる。
     - 構築した後は、楽に使いたい。DBの管理みたいな面倒なことはしたくない。
     - HTTPのキャッシュの仕組みがちゃんと動いて欲しい。
@@ -154,7 +156,7 @@ cats\_dogsは、手軽さのため、以下の問題を解決するように作�
 ## Markdown書式の仕様
 
 cats\_dogsのMarkdown処理は、GitHubとの互換性を意識した作りになっていますが、
-余計な機能を無効にして、シンプルなMarkdownの仕様にすることも出来ます。  
+余計な機能を無効にして、シンプルなMarkdownの仕様にもできます。
 用途に合わせて自由にカスタマイズして利用してください。
 
 設定方法やMarkdown処理の詳細については、[cats\_dogsのMarkdown処理](markdown_format.md)を参照してください。

@@ -15,6 +15,7 @@ mermaid = false
 highlight = false
 geo_map = false
 embed = false
+alerts = false
 
 [auto_ids]
 Type = "safe"
@@ -24,4 +25,7 @@ backlink_html = ""
 
 [emoji]
 mapping = ""
+
+[alerts]
+title_mapping = ""
 ```
