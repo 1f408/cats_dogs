@@ -2,19 +2,15 @@
 <html>
 <head>
 {{template "part_head.tmpl" . -}}
+{{template "part_sm_card.tmpl" . -}}
 {{- if ne .Title "" -}}
 <title>{{html .Title}}</title>
 {{end -}}
 </head>
 <body>
 <noscript><p class="color-a"><strong>数式表示、ハイライト処理、Refererヘッダ強制削除等の各種処理にJavaScriptを利用しています。</strong></p></noscript>
-<div id="style_config"></div>
-{{- if ne .Toc "" -}}
-<nav id="toc"><details>
-<summary>目次</summary>
-{{.Toc}}
-</details></nav>
-{{end -}}
+<div id="tools"><div id="style_config"></div>{{template "part_link_menu.tmpl" .}}</div>
+{{template "part_tocnav.tmpl" . -}}
 {{template "part_locnav.tmpl" . -}}
 {{if .Options.DirectoryView -}}
 <div id="files" class="files">

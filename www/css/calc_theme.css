@@ -1,0 +1,42 @@
+@layer base {
+  :root {
+    --color-light-delta: calc(( var(--base-color-bg-L) - var(--base-color-fg-L) ) / 8);
+    --base-color-fg: oklch(var(--base-color-fg-L) 0 0);
+    --base-color-a: hsl(var(--base-color-a-H) 100% 50%);
+    --base-color-b: hsl(var(--base-color-b-H) 100% 50%);
+    --base-color-c: hsl(var(--base-color-c-H) 100% 50%);
+
+    --fix-color-a: oklch(from var(--base-color-a) calc(var(--base-color-fg-L) + var(--color-light-delta) * 6) var(--color-chroma) h);
+    --fix-color-b: oklch(from var(--base-color-b) calc(var(--base-color-fg-L) + var(--color-light-delta) * 6) var(--color-chroma) h);
+    --fix-color-c: oklch(from var(--base-color-c) calc(var(--base-color-fg-L) + var(--color-light-delta) * 6) var(--color-chroma) h);
+
+    --color-0-fg: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 0) c h);
+    --color-0-g1: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 2) c h);
+    --color-0-g2: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 5) c h);
+    --color-0-bg: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 7) c h);
+
+    --color-1-fg: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 1) c h);
+    --color-1-g1: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 3) c h);
+    --color-1-g2: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 6) c h);
+    --color-1-bg: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 8) c h);
+
+    --color-0-t1: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 7) c h / 0.5);
+    --color-0-t2: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 2) c h / 0.5);
+    --color-1-t1: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 8) c h / 0.5);
+    --color-1-t2: oklch(from var(--base-color-fg) calc(var(--base-color-fg-L) + var(--color-light-delta) * 3) c h / 0.5);
+
+    --color-0-a1: oklch(from var(--fix-color-a) calc(var(--base-color-fg-L) + var(--color-light-delta) * 2) c h);
+    --color-0-a2: oklch(from var(--fix-color-a) calc(var(--base-color-fg-L) + var(--color-light-delta) * 5) c h);
+    --color-0-b1: oklch(from var(--fix-color-b) calc(var(--base-color-fg-L) + var(--color-light-delta) * 2) c h);
+    --color-0-b2: oklch(from var(--fix-color-b) calc(var(--base-color-fg-L) + var(--color-light-delta) * 5) c h);
+    --color-0-c1: oklch(from var(--fix-color-c) calc(var(--base-color-fg-L) + var(--color-light-delta) * 2) c h);
+    --color-0-c2: oklch(from var(--fix-color-c) calc(var(--base-color-fg-L) + var(--color-light-delta) * 5) c h);
+
+    --color-1-a1: oklch(from var(--fix-color-a) calc(var(--base-color-fg-L) + var(--color-light-delta) * 3) c h);
+    --color-1-a2: oklch(from var(--fix-color-a) calc(var(--base-color-fg-L) + var(--color-light-delta) * 6) c h);
+    --color-1-b1: oklch(from var(--fix-color-b) calc(var(--base-color-fg-L) + var(--color-light-delta) * 3) c h);
+    --color-1-b2: oklch(from var(--fix-color-b) calc(var(--base-color-fg-L) + var(--color-light-delta) * 6) c h);
+    --color-1-c1: oklch(from var(--fix-color-c) calc(var(--base-color-fg-L) + var(--color-light-delta) * 3) c h);
+    --color-1-c2: oklch(from var(--fix-color-c) calc(var(--base-color-fg-L) + var(--color-light-delta) * 6) c h);
+  }
+}

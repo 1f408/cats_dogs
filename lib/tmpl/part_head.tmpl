@@ -1,11 +1,22 @@
 <meta charset="UTF-8">
 <meta name="referrer" content="same-origin">
 <link rel="stylesheet" type="text/css" href="{{html .Lib}}css/base.css">
+{{if .Options.PageStyle -}}
+<link rel="stylesheet" type="text/css" href="{{html .Lib}}css/style_{{html .Options.PageStyle}}.css">
+{{end -}}
 {{if .Options.DirectoryView -}}
 <link rel="stylesheet" type="text/css" href="{{html .Lib}}css/cls_files.css">
 {{end -}}
+{{with .Options.PrintSizeCss -}}
+<link rel="stylesheet" type="text/css" href="data:text/css;,{{print "@layer base {@media print{@page{size: " . ";}}}" | uridata}}">
+{{end -}}
+{{with .Options.PrintZoom -}}
+<link rel="stylesheet" type="text/css" href="data:text/css;,{{print "@layer base {@media print{:root{zoom:" . ";}}}" | uridata}}">
+{{end -}}
 {{if eq .Options.ThemeStyle "radio" -}}
 {{template "theme_radio.tmpl" . -}}
+{{else if eq .Options.ThemeStyle "load" -}}
+{{template "theme_load.tmpl" . -}}
 {{else -}}
 {{template "theme_os.tmpl" . -}}
 {{end -}}

@@ -1,5 +1,7 @@
-div.geomap {
-	margin: 1em;
-	width: calc(100% - 2em);
-	height: 56vmin;
+@layer base {
+  div.geomap {
+    margin: 1em;
+    width: calc(100% - 2em);
+    height: 56vmin;
+  }
 }

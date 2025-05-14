@@ -1,0 +1,35 @@
+{{with .SmCard -}} 
+{{if .Description -}}
+<meta name="twitter:description" content="{{html .Description}}">
+<meta property="og:description" content="{{html .Description}}">
+{{end -}}
+{{if .Title -}}
+<meta name="twitter:title" content="{{html .Title}}">
+<meta property="og:title" content="{{html .Title}}">
+{{end -}}
+{{if .UseXcomLarge -}}
+<meta name="twitter:card" content="summary_large_image">
+{{else -}}
+<meta name="twitter:card" content="summary">
+{{end -}}
+{{if .Image -}}
+<meta name="twitter:image" content="{{html .Image}}">
+<meta property="og:image" content="{{html .Image}}">
+{{end -}}
+{{if .Alt -}}
+<meta name="twitter:image:alt" content="{{html .Alt}}">
+{{end -}}
+{{if .SiteUrl -}}
+<meta property="og:url" content="{{html .SiteUrl}}">
+{{end -}}
+{{if .SiteName -}}
+<meta property="og:site_name" content="{{html .SiteName}}">
+{{end -}}
+{{if .SiteXcomId -}}
+<meta name="twitter:site" content="{{html .SiteXcomId}}">
+{{end -}}
+{{if .CreatorXcomId -}}
+<meta name="twitter:creator" content="{{html .CreatorXcomId}}">
+{{end -}}
+{{end -}}
+

@@ -1,5 +1,5 @@
 @layer theme {
-  /* for Deuteranopia */
+  /* for Tritanopia */
   :root {
     @media not print {
       --color-schame: dark;
@@ -13,8 +13,8 @@
       --base-color-bg-L: 1.0;
       --color-chroma: 0.25;
     }
-    --base-color-a-H: 30;
-    --base-color-b-H: 195;
-    --base-color-c-H: 235;
+    --base-color-a-H: 0;
+    --base-color-b-H: 285;
+    --base-color-c-H: 150;
   }
 }

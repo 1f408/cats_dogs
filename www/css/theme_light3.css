@@ -1,12 +1,12 @@
 @layer theme {
-  /* for Deuteranopia */
+  /* for Protanopia */
   :root {
     --color-schame: light;
     --base-color-fg-L: 0.25;
     --base-color-bg-L: 0.95;
     --color-chroma: 0.25;
-    --base-color-a-H: 30;
+    --base-color-a-H: 275;
     --base-color-b-H: 195;
-    --base-color-c-H: 235;
+    --base-color-c-H: 113;
   }
 }

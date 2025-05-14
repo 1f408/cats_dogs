@@ -1,17 +1,30 @@
 document.addEventListener('DOMContentLoaded', function(){
   let all_theme = d3.selectAll("link.theme");
-  let theme_form = d3.select("#style_config").append("form");
+  let theme_form = d3.select("#style_config").append("form").classed("theme_frm", true);
+
+  let mode = "";
+  let mode_div;
   all_theme.each(function(){
     let elm = d3.select(this);
     let sname = this.id.replace(/_theme$/, '');
+    let v = sname.match(/^(dark|light)([0-9A-Z])$/);
+    if(v == null){ return; }
+
+    let mname = v[1];
+    let tname = v[2];
     let chk = (elm.attr("disabled") == null);
     let id = sname+"_theme_rdo";
     if(sname == ""){ return; }
 
-    theme_form.append("input").classed("theme", true).attr("id", id)
+    if(mode != mname){
+      mode_div = theme_form.append("div");
+      mode = mname;
+      mode_div.append("span").text(mode+":");
+    }
+    mode_div.append("input").classed("theme_in", true).attr("id", id)
       .attr("type", "radio").attr("name", "theme").attr("value", sname)
       .property("checked", chk);
-    theme_form.append("label").text(":"+sname+" ").attr("for", id);
+    mode_div.append("label").text(tname).attr("for", id);
   });
 
   let def_theme = d3.select("link.theme:not([disabled])");
@@ -32,11 +45,12 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }
   function change_theme(sname){
-    let theme_form = d3.select("input.theme[value="+sname+"]")
+    d3.select(".theme_frm input.theme_in[name=\"theme\"][value="+sname+"]")
       .property("checked", true);
     set_theme(sname);
   }
-  d3.selectAll("input.theme")
-    .on("change", function(){ set_theme(this.value); });
   change_theme(localStorage.getItem("ColorStyle"));
+
+  d3.selectAll(".theme_frm input.theme_in[name=\"theme\"")
+    .on("change", function(){ set_theme(this.value); });
 });

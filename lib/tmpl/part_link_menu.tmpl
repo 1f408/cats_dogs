@@ -1,0 +1,7 @@
+{{- with .LinkMenu -}}
+<nav id="top_menu"><span class="menu-btn"></span><div class="menu"><ul>
+{{- range . -}}
+<li><a href="{{html .Url}}">{{html .Label}}</a></li>
+{{- end -}}
+</ul></div></nav>
+{{- end -}}

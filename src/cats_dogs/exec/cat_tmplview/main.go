@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/l4go/task"
 	"github.com/1f408/cats_eeds/view/tmplview"
+	"github.com/l4go/task"
 )
 
 func die(format string, v ...interface{}) {
@@ -39,7 +39,7 @@ func init() {
 		os.Exit(1)
 	}
 
-    cfg, err := tmplview.NewTmplViewConfig(flag.Arg(0))
+	cfg, err := tmplview.NewTmplViewConfig(flag.Arg(0))
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
