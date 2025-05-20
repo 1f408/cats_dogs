@@ -344,17 +344,6 @@
   dfn, dt {
     text-decoration: underline;
   }
-  dl {
-    padding: 0;
-    dt {
-      padding: 0;
-      margin-top: 16px;
-    }
-    dd {
-      padding: 0 16px;
-      margin-bottom: 16px;
-    }
-  }
 
   del {
     text-decoration: line-through double;
@@ -563,9 +552,31 @@
     border-color: var(--color-0-g1);
   }
 
-  ul, ol {
-    padding-left: calc(4px + 1em);
+  li > p {
+    margin-top: 0;
+  }
 
+  h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+    font-size: inherit;
+  }
+
+  p, ul, ol, dl, table, pre {
+    margin: 0.5em 0 0.75em 0;
+  }
+
+  dl {
+    padding: 0;
+  }
+  dt {
+    padding: 0;
+    margin: 0;
+  }
+  dd {
+    padding: 0;
+    margin: 0 0 0.5em 5ex;
+  }
+
+  ul, ol {
     ul, ol {
       margin-top: 0;
       margin-bottom: 0;
@@ -577,16 +588,11 @@
       list-style-type: lower-roman;
     }
   }
-  li > p {
-    margin-top: 0;
+  ul, :is(ol, ul, dl) ol {
+    padding-left: calc(4px + 1em);
   }
-
-  h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
-    font-size: inherit;
-  }
-
-  p, blockquote, ul, ol, dl, table, pre {
-    margin: 0.5em 0 0.75em 0;
+  ol {
+    padding-left: calc(4px + 4ex);
   }
 
   q::before, q::after {
