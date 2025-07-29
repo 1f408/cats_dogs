@@ -9,6 +9,7 @@ import (
 
 	"github.com/1f408/cats_eeds/view/mdview"
 	"github.com/l4go/task"
+	"github.com/l4go/unifs"
 )
 
 var DumpPath string = ""
@@ -30,16 +31,22 @@ func init() {
 		os.Exit(1)
 	}
 
-	cfg, err := mdview.NewMdViewConfig(flag.Arg(0))
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
+	cfgfile, ferr := unifs.FromOSPath(flag.Arg(0))
+	if ferr != nil {
+		fmt.Fprintln(os.Stderr, "Configuration file path error:", flag.Arg(0), ferr)
+		os.Exit(1)
+	}
+
+	cfg, cerr := mdview.NewMdViewConfig(cfgfile)
+	if cerr != nil {
+		fmt.Fprintln(os.Stderr, "Configuration file parser error:", flag.Arg(0), ferr)
 		os.Exit(1)
 	}
 
 	var verr error
 	CatMdview, verr = mdview.NewMdView(cfg)
 	if verr != nil {
-		fmt.Fprintln(os.Stderr, verr)
+		fmt.Fprintln(os.Stderr, "mdview parameter error:", verr)
 		os.Exit(1)
 	}
 }
@@ -65,7 +72,7 @@ func main() {
 	}
 
 	if serr := CatMdview.ListenAndServe(cc); serr != nil {
-		os.Stderr.WriteString(serr.Error())
+		fmt.Fprintln(os.Stderr, "mdview runtime error:", serr)
 		os.Exit(2)
 	}
 }

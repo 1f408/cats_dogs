@@ -9,6 +9,7 @@ import (
 
 	"github.com/1f408/cats_eeds/view/tmplview"
 	"github.com/l4go/task"
+	"github.com/l4go/unifs"
 )
 
 func die(format string, v ...interface{}) {
@@ -39,16 +40,22 @@ func init() {
 		os.Exit(1)
 	}
 
-	cfg, err := tmplview.NewTmplViewConfig(flag.Arg(0))
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
+	cfgfile, ferr := unifs.FromOSPath(flag.Arg(0))
+	if ferr != nil {
+		fmt.Fprintln(os.Stderr, "Configuration file path error:", flag.Arg(0), ferr)
+		os.Exit(1)
+	}
+
+	cfg, cerr := tmplview.NewTmplViewConfig(cfgfile)
+	if cerr != nil {
+		fmt.Fprintln(os.Stderr, "Configuration file parser error:", flag.Arg(0), ferr)
 		os.Exit(1)
 	}
 
 	var verr error
 	CatTmplview, verr = tmplview.NewTmplView(cfg)
 	if verr != nil {
-		fmt.Fprintln(os.Stderr, verr)
+		fmt.Fprintln(os.Stderr, "tmplview parameter error:", verr)
 		os.Exit(1)
 	}
 }
@@ -73,7 +80,7 @@ func main() {
 	}
 
 	if serr := CatTmplview.ListenAndServe(cc); serr != nil {
-		os.Stderr.WriteString(serr.Error())
+		fmt.Fprintln(os.Stderr, "tmplview runtime error:", serr)
 		os.Exit(2)
 	}
 }
