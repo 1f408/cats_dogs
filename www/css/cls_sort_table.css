@@ -1,0 +1,15 @@
+table th[data-sort-state]::after {
+  color: var(--color-0-g1);
+  font-size: 50%;
+  font-weight: normal;
+  vertical-align: super;
+}
+table th[data-sort-state="1"]::after {
+  content: " ▲"; 
+}
+table th[data-sort-state="2"]::after {
+  content: " ▼"; 
+}
+table th[data-sort-state="0"]::after {
+  content: " ⇅";
+}
