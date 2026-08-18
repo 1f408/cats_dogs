@@ -38,6 +38,8 @@ highlight = true
 geo_map = true
 embed = true
 alerts = true
+ms_include = true
+data_table = true
 
 [auto_ids]
 #type = "safe"
@@ -78,9 +80,13 @@ backlink_html = "<sup>戻る</sup>"
 |**geo\_map**|GeoJSON/TopoJSONの地図表示機能の有効無効|
 |**embed**|audio/video/iframeタグでの埋め込み表示機能の有効無効(Markdownの表記は、画像埋め込みと同じ書式です。)|
 |**alerts**|[GitHub Alerts拡張](alerts_ext.md)の有効無効|
+|**ms_include**|MS Learn形式の[インクルード拡張](include_ext.md)の有効無効|
+|**data_table**|[データテーブル拡張](data_table_ext.md)の有効無効|
 
 GFM互換のMarkdown拡張の仕様については、[GitHub Flavored Markdown Spec](https://github.github.com/gfm/)を参照してください。  
-GitHub Alert拡張の詳細は、[GitHub Alerts Markdown拡張について](alerts_ext.md)の説明を参照してください。
+GitHub Alert拡張の詳細は、[GitHub Alerts Markdown拡張について](alerts_ext.md)の説明を参照してください。  
+インクルード互換拡張の詳細は、[インクルード拡張について](include_ext.md)の説明を参照してください。  
+データテーブル拡張の詳細は、[データテーブル拡張について](data_table_ext.md)の説明を参照してください。
 
 ---
 
@@ -186,7 +192,7 @@ path="/audio"
 regex="\\.webm$"
 
 [[video]]
-Gsite_id="video_site"
+site_id="video_site"
 host="www.example.com"
 path="/video"
 regex="\\.wave$"
@@ -198,6 +204,8 @@ type="query"
 query="v"
 path="/watch"
 player="https://www.youtube.com/embed/$0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
 
 [[iframe]]
 site_id="youtube"
@@ -205,6 +213,8 @@ host="youtu.be"
 type="regex"
 regex='^/([^/]+)$'
 player="https://www.youtube.com/embed/$1"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
 
 [[iframe]]
 site_id="youtube"
@@ -212,6 +222,8 @@ host="www.youtube.com"
 type="path"
 path="/embed"
 player="https://www.youtube.com/embed/$0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
 ```
 
 ### ルート要素
@@ -242,6 +254,8 @@ player="https://www.youtube.com/embed/$0"
 | :--- | :--- |
 |**site\_id**|CSSでのカスタマイズ用の識別名|
 |**host**|処理対象にするホスト|
+|**allow**|iframeタグのallow属性の値(未指定時は`fullscreen`)|
+|**referrerpolicy**|iframeタグのreferrerpolicy属性の値(未指定時は`no-referrer`)|
 
 ### **type**="path"の場合
 
@@ -333,7 +347,7 @@ HINT = "Hint!"
 
 ---
 
-## twitter等の外部アプリの埋め込み
+## X(x.com)等の外部アプリの埋め込み
 
 埋め込みに対応したWebアプリの場合、JavaScriptライブラリを利用する仕組みになってることが多いです。  
 このようなWebアプリを埋め込みたい場合は、templateファイルを変更し、JavaScriptライブラリをロードさせる必要があります。
@@ -342,16 +356,16 @@ HINT = "Hint!"
 その手順は以下の通りです。
 
 1. JavaScriptライブラリロード用のテンプレートファイルを作成する。
-    - 以下はtwitterの例([enable\_twitter.tmpl](../lib/tmpl/enable_twitter.tmpl)の内容)
+    - 以下はX(x.com)の例([enable\_xcom.tmpl](../lib/tmpl/enable_xcom.tmpl)の内容)
     ```
-    {{if once "enable_twitter.tmpl" -}}
-    <script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    {{if once "enable_xcom.tmpl" -}}
+    <script defer src="https://platform.x.com/widgets.js" charset="utf-8"></script> 
     {{end -}}
-    ```
+   ```
     - ロードタイミングは`defer`を指定してください。(コンテンツの読み込み完了した後に、JavaScriptライブラリを動作させる必要があるためです。)
 1. JavaScriptライブラリをロードするテンプレートファイルを有効にする。
     - 作成したテンプレートファイルの指定を、[part\_head.tmpl](../lib/tmpl/part_head.tmpl)へ追加する。
-    - 以下は、`enable_twitter.tmpl`を有効化する例です。
+    - 以下は、`enable_xcom.tmpl`を有効化する例です。
     ```
-    {{template "enable_twitter.tmpl" -}}
+    {{template "enable_xcom.tmpl" -}}
     ```
