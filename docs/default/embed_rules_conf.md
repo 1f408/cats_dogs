@@ -11,6 +11,8 @@ type="query"
 query="v"
 path="/watch"
 player="https://www.youtube.com/embed/$0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
 
 [[iframe]]
 site_id="youtube"
@@ -18,6 +20,8 @@ host="youtu.be"
 type="path"
 path="/"
 player="https://www.youtube.com/embed/$0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
 
 [[iframe]]
 site_id="youtube"
@@ -25,6 +29,8 @@ host="www.youtube.com"
 type="path"
 path="/embed"
 player=""
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
 
 [[iframe]]
 site_id="vimeo"

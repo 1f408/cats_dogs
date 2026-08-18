@@ -16,6 +16,8 @@ highlight = false
 geo_map = false
 embed = false
 alerts = false
+ms_include = false
+data_table = false
 
 [auto_ids]
 Type = "safe"

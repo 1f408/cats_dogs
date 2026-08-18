@@ -189,6 +189,14 @@
     line-height: inherit;
   }
 
+  sub, sup {
+    font-size: smaller;
+    margin: 0px;
+  }
+  sub ~ sub, sup ~ sup {
+    margin-left: 0.25em;
+  }
+
   textarea {
     font-family: var(--fonts-mono);
     color: var(--color-1-fg);
@@ -538,18 +546,26 @@
     font-weight: 500;
   }
 
-  tr > :is(th, td):first-of-type {
+
+  tr > :is(th, td):not(:is(th, td) ~ *) {
     border-left-style: none;
+  }
+
+  tr > th:not(:is(th, td) ~ *) + :is(th, td),
+  tr > th:is(:is(th, td) ~ *):not(:has(~ :is(th, td))) {
+    border-left-color: var(--color-0-g1);
+    border-left-style: solid;
+  }
+
+  :is(thead, tfoot) > tr > :is(th, td) {
+    border-color: var(--color-0-g1);
   }
   :is(table, thead, tbody, tfoot:only-child) > tr:first-of-type > :is(th, td) {
     border-top-style: none;
   }
   thead:not(:only-child) > tr:last-of-type > :is(th, td) {
+    border-bottom-color: var(--color-0-g1);
     border-bottom-style: solid;
-  }
-
-  :is(thead, tfoot) > tr > :is(th, td) {
-    border-color: var(--color-0-g1);
   }
 
   li > p {
